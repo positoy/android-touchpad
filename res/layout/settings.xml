@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="MOUSE OPTION"
+                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+           <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:orientation="horizontal" 
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#FFFFFF">
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/handed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="7dp"
+                android:text="HANDED"
+                android:textStyle="italic"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <RadioGroup
+                android:id="@+id/handedGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/lefthanded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Left Handed" />
+
+                <RadioButton
+                    android:id="@+id/righthanded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="21"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Right Handed" />
+            </RadioGroup>
+
+        </LinearLayout>
+        
+		<LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ 
+            <TextView
+                android:id="@+id/sesitivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="SENSITIVITY"
+                android:textStyle="italic"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <SeekBar 
+                android:id="@+id/mouseSensitivity"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ 
+            <TextView
+                android:id="@+id/pointer_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="POINTER SHAPE"
+                android:textStyle="italic"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            <ImageButton
+                android:id="@+id/pointer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <Button 
+                    android:id="@+id/okay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Okay"
+                    />
+                <Button 
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Cancel"
+                    />
+                </LinearLayout>          
+            
+            </LinearLayout>
+
+</LinearLayout>

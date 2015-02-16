@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">가상터치패드</string>
+	<string name="app_name">가상터치패드</string>
+	
+	<string name="title">한손으로 이용하는 터치패드</string>
+	
+	<string name="btn_start">열기</string>
+	<string name="btn_end">닫기</string>
+	<string name="title_template_step">TYPE </string>
+</resources>
